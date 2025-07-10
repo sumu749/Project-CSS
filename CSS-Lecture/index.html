@@ -15,14 +15,10 @@
 
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap" rel="stylesheet">
-    <style>
-        body{
-            background-color: rgb(154, 188, 181);
-            font-family: 'Libertinus Math', serif;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- navigation (relative linking) -->
@@ -37,38 +33,36 @@
     <!-- main  -->
     <main>
         <!-- section: Intro  -->
-    <section>
-        <h1>Sumaiya Alam</h1>
-        <p><em>web developer,student of BSc in CSE</em></p>
-        <a href="https://www.facebook.com/sumaiya.alam.749" target="_blank"><img src="Images/BAU.jpg" alt="BAU" width="200" height="200"></a>
-        
-        <hr>
-    </section>
+        <section id="intro">
+            <div class="card">
+                <h1>Sumaiya Alam</h1>
+                <p>web developer,student of BSc in CSE</p>
+                <a href="https://www.facebook.com/sumaiya.alam.749" target="_blank"><img src="Images/BAU.jpg" alt="BAU" width="200" height="200"></a>
+            </div>
+        </section>
 
     <!-- section: About Me  -->
-    <section>
-        <h2><u>About Me</u></h2>
-        <p>Brief <strong>introduction</strong> about myself, my <b>background</b>, and my <strong>interests</strong>.</p>
-        <p>My name is <em>Sumaiya Alam</em>, and I am a <strong>web developer</strong> with a passion for creating <i>dynamic and responsive websites</i>. I am currently pursuing a Bachelor of Science in <strong>Computer Science and Engineering (CSE)</strong>.</p>
-    </section>
-    <hr>
+        <section id="about" class="card">
+            <h2><u>About Me</u></h2>
+            <p>Brief <strong>introduction</strong> about myself, my <b>background</b>, and my <strong>interests</strong>.</p>
+            <p>My name is Sumaiya Alam, and I am a <strong>web developer</strong> with a passion for creating dynamic and responsive websites. I am currently pursuing a Bachelor of Science in <strong>Computer Science and Engineering (CSE)</strong>.</p>
+        </section>
 
     <!-- section:Experience  -->
-    <section>
-        <h2>Experience</h2>
-        <p>Details about my professional experience, including roles and responsibilities.</p>
-        <ol>
-            <li>Intern at XYZ Company - Developed web applications using React and Node.js.</li>
-            <li>Freelance Web Developer - Created responsive websites for various clients.</li>
-            <li>Volunteer at ABC Organization - Assisted in maintaining their website and online presence.</li>
-        </ol>
-    </section>
-    <hr>
+        <section id="experience" class="card">
+            <h2><u>Experience</u></h2>
+            <p>Details about my professional experience, including roles and responsibilities.</p>
+            <ol>
+                <li>Intern at XYZ Company - Developed web applications using React and Node.js.</li>
+                <li>Freelance Web Developer - Created responsive websites for various clients.</li>
+                <li>Volunteer at ABC Organization - Assisted in maintaining their website and online presence.</li>
+            </ol>
+        </section>
 
     <!-- section:Technologies  -->
-    <section>
-        <h2>Technologies</h2>
-        <table border="1" cellpadding="5" cellspacing="0">
+    <section id="technologies" class="card">
+        <h2><u>Technologies</u></h2>
+        <table>
         <thead>
             <tr>
                 <th>Technology</th>
@@ -90,33 +84,11 @@
             </tr>
         </tbody>
         </table>
-
-    <div>
-        <h4>Skill Progress</h4>
-        <div>
-            <label for="htmlProgress">HTML:</label>
-            <progress id="htmlProgress" value="80" max="100">80%</progress>
-        </div>
-        <div>
-            <label for="cssProgress">CSS:</label>
-            <progress id="cssProgress" value="70" max="100">70%</progress>
-        </div>
-        <div>
-            <label for="jsProgress">JavaScript:</label>
-            <progress id="jsProgress" value="60" max="100">60%</progress>
-        </div>
-    </div>
-    <div>
-        <h4>Experience Level</h4>
-        <label for="experienceLevel">Experience:</label>
-        <meter id="experienceLevel" min="0" max="10" value="0.5">0.5 year</meter>
-    </div>
-
     </section>
 
     <!-- section:Skills  -->
-    <section>
-        <h2>Skills</h2>
+    <section id="skills" class="card">
+        <h2><u>Skills</u></h2>
         <p>A list of my technical and soft skills.</p>
         <ol type="i">
             <li>HTML</li>
@@ -133,11 +105,12 @@
             <li>Responsive Design</li>
             <li>Problem Solving</li>
             <li>Team Collaboration</li>
+        </ol>
     </section>
 
     <!-- section:Education  -->
-    <section>
-        <h2>Education</h2>
+    <section id="education" class="card">
+        <h2><u>Education</u></h2>
         <p>Information about my educational background, including degrees and institutions.</p>
         <ul>
             <li>Bachelor of Science in Computer Science and Engineering (CSE) - Rajshahi University (Expected Graduation: 2024)</li>
@@ -147,8 +120,8 @@
     </section>
 
     <!-- section:Projects  -->
-    <section>
-        <h2>Projects</h2>
+    <section   id="projects" class="card">
+        <h2><u>Projects</u></h2>
         <p>Showcase of my projects with descriptions and links to live demos or repositories.</p>
         <ul type ="circle">
             <li>
@@ -166,15 +139,9 @@
         </ul>
     </section>
 
-    <!-- section:Success Video  -->
-    <section>
-        <video width="320" height="200" controls src="./assets/video/success.mp4" type="video/mp4">your browser do not support this type of video. </video>
-    </section>
-    <hr>
-
     <!-- section:Contact (Absolute linking) -->
-    <section>
-        <h2>Contact</h2>
+    <section id="contact" class="card">
+        <h2><u>Contact</u></h2>
         <p>How to get in touch with me, including email and social media links.</p>
         <form action="https://formspree.io/f/mqabvykb" method="POST">
             <div>
@@ -187,25 +154,6 @@
                 <input type="email" id="email" name="email" required>
             </div>
 
-                <div>
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age" min="15" max="75" required>
-            </div>
-
-            <div>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required>
-            </div>
-
-            <div>
-                <label for="website">Website:</label>
-                <input type="url" id="website" name="website" pattern="https?://.+" placeholder="https://example.com" required>
-            </div>
-
-            <div>
-                <label for="image">Upload Image:</label>
-                <input type="file" id="image" name="image" accept="image/*" required>
-            </div>
             <div>
                 <label for="subject">Subject:</label>
                 <select name="subject" id="subject">
@@ -216,7 +164,6 @@
                 </select>
             </div>
 
-        
             <div>
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="3" required></textarea>
@@ -231,7 +178,6 @@
             <li>GitHub: <a href="https://github.com/sumu749" target="_blank">github.com/sumu749</a></li>
             <li>LinkedIn: <a href="https://www.linkedin.com/in/sumaiya-alam-123456789/" target="_blank">linkedin.com/in/sumaiya-alam-123456789</a></li>
             <li>Twitter: <a href="https://twitter.com/sumaiya_alam" target="_blank">twitter.com/sumaiya_alam</a></li>
-            
         </ul>
     </section>
     <hr>
@@ -241,15 +187,17 @@
     <footer>
         <p>&copy; 2023 Sumaiya Alam. All rights reserved.</p>
         <p>Last updated: October 2023</p>
-        <a href="tel:01757188749">Call me</a>
-        <hr>
-        <h3>Follow me</h3>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/sumaiya.alam.749" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook
-                </a>
-            </li>
-        </ul>
+
+        <div class="social-links" >
+            <ul>
+                <li>
+                    <a href="tel:01757188749">Call me</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/sumaiya.alam.749" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                </li>
+            </ul>
+        </div>
 
     <!-- section:End  -->
     <p>Thank you for visiting my portfolio! Feel free to reach out if you have any questions or would like to collaborate.</p>
@@ -258,7 +206,6 @@
     <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7179.837585664306!2d89.50124864161018!3d25.872150012647054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e2da6720cab9c1%3A0xbf37f3020bc0e08f!2sBarabari!5e0!3m2!1sen!2sbd!4v1752004332742!5m2!1sen!2sbd" title="Home maps" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <hr>
     <!-- definition list  -->
     <!-- <section>
         <dl>
