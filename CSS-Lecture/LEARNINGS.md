@@ -30,4 +30,6 @@ selector{
 ## Intermediate CSS
 
 - Background properties
-- basic layout - float,positioning
+- basic layout - display property-inline,block,inline-block, float,positioning,flex,grid
+- transition
+- animation

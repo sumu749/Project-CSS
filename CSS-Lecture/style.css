@@ -70,6 +70,10 @@ main{
     padding: 20px;
 }
 
+#intro{
+    background-image: url(Images/cover.jpg);
+}
+
 table{
     width: 100%;
     border-collapse: collapse;
